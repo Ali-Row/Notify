@@ -4,6 +4,9 @@
 .text-theme {
   color: #f14d4d !important;
 }
+.border {
+  border: solid #f14d4d !important;
+}
 .outline {
   border: solid #fff !important;
   -webkit-transition: border 0.2s;
@@ -14,4 +17,8 @@
 }
 .outline:hover {
   border: solid #f14d4d !important;
+}
+.bottom-radius {
+  border-bottom-left-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
 }

@@ -8,6 +8,9 @@ $white: #ffffff !important;
 .text-theme {
     color: $bgTheme;
 }
+.border {
+    border: solid $bgTheme;
+}
 .outline {
     border: solid $white;
     -webkit-transition: border 0.2s;
@@ -18,4 +21,11 @@ $white: #ffffff !important;
 .outline:hover {
     border: solid $bgTheme;    
 }
+
+.bottom-radius {
+    border-bottom-left-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+}
+
+
 
