@@ -1,0 +1,21 @@
+// Vars
+$bgTheme: rgb(241, 77, 77) !important;
+$white: #ffffff !important;
+
+.bg-theme {
+    background-color: $bgTheme;
+}
+.text-theme {
+    color: $bgTheme;
+}
+.outline {
+    border: solid $white;
+    -webkit-transition: border 0.2s;
+    transition: border 0.2s;
+}  
+  .outline {transition-timing-function: linear;}
+
+.outline:hover {
+    border: solid $bgTheme;    
+}
+
