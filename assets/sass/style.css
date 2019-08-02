@@ -56,3 +56,6 @@ body {
 .text-box {
   width: 290px !important;
 }
+#newNoteDiv {
+  border-bottom: solid #b6b6b6;
+}
