@@ -4,14 +4,17 @@
 .text-theme {
   color: #f14d4d !important;
 }
-.border {
-  border: solid #f14d4d !important;
-}
 .white-background {
   background: #fff !important;
 }
+.border {
+  border: solid 2px #f14d4d !important;
+}
+.border-left {
+  border-left: solid 5px #f14d4d !important;
+}
 .outline {
-  border: solid #fff !important;
+  border: solid 2px #fff !important;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
 }
@@ -19,7 +22,7 @@
   transition-timing-function: linear;
 }
 .outline:hover {
-  border: solid #f14d4d !important;
+  border: solid 2px #f14d4d !important;
 }
 .bottom-radius {
   border-bottom-left-radius: 30px !important;
@@ -40,4 +43,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+.max-width {
+  max-width: 1200px;
+}
+.opacity {
+  background: rgba(255, 255, 255, 0.5);
 }

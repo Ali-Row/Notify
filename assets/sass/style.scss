@@ -9,22 +9,26 @@ $font: 'Handlee', cursive;
 .text-theme {
     color: $bgTheme;
 }
-.border {
-    border: solid $bgTheme;
-}
 .white-background {
     background: $white;
 }
+.border {
+    border: solid 2px $bgTheme;
+}
+.border-left {
+    border-left: solid 5px $bgTheme;
+}
 .outline {
-    border: solid $white;
+    border: solid 2px $white;
     -webkit-transition: border 0.2s;
     transition: border 0.2s;
 }  
   .outline {transition-timing-function: linear;}
 
 .outline:hover {
-    border: solid $bgTheme;    
+    border: solid 2px $bgTheme;    
 }
+
 .bottom-radius {
     border-bottom-left-radius: 30px !important;
     border-bottom-right-radius: 30px !important;
@@ -44,6 +48,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.max-width {
+    max-width: 1200px;
+}
+.opacity {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 
