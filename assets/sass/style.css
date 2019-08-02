@@ -56,6 +56,15 @@ body {
 .text-box {
   width: 290px !important;
 }
-#newNoteDiv {
-  border-bottom: solid #b6b6b6;
+.new-note {
+  background: rgba(255, 255, 255, 0.507);
+  padding: 25px;
+  margin: 0% auto;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.delete {
+  margin-right: 7px;
+  display: flex;
+  flex-direction: row;
 }

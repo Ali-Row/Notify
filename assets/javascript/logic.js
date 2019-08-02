@@ -1,18 +1,15 @@
 console.log("hello world!");
 
-// // Text box
-// // Add note button
-
 function showNewNote(list) {
   // Add new note div
   $("newNoteDiv").empty();
   
   for (let i = 0; i < list.length; i++) {
 
-    let note = $('<p>');
+    let note = $('<p class="fine-font new-note border-left shadow-sm">');
     note.text(list[i]);
 
-    let closeNote = $("<button>");
+    let closeNote = $('<button class="btn btn-primary white-background text-theme outline rounded-pill">');
     closeNote.attr("new-note", i);
     closeNote.addClass("delete");
     closeNote.text("X");
@@ -38,5 +35,18 @@ $("#addNote").on("click", function(event){
 $(document).on("click", ".delete", function() {
 
     let noteNumber = $(this).attr("new-note");
+
+    list.splice(noteNumber, 1);
+
+    showNewNote(list);
+
+    localStorage.setItem("note-added", JSON.stringify(list));
 });
 
+let list = JSON.parse(localStorage.getItem("note-added"));
+
+if (!Array.isArray(list)) {
+    list = []
+}
+
+showNewNote(list);
