@@ -7,6 +7,9 @@
 .border {
   border: solid #f14d4d !important;
 }
+.white-background {
+  background: #fff !important;
+}
 .outline {
   border: solid #fff !important;
   -webkit-transition: border 0.2s;
@@ -21,4 +24,20 @@
 .bottom-radius {
   border-bottom-left-radius: 30px !important;
   border-bottom-right-radius: 30px !important;
+}
+.font {
+  font-family: "Handlee", cursive;
+}
+.fine-font {
+  font-family: "Raleway", sans-serif;
+}
+.size-22 {
+  font-size: 22px !important;
+}
+body {
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

@@ -1,6 +1,7 @@
 // Vars
 $bgTheme: rgb(241, 77, 77) !important;
 $white: #ffffff !important;
+$font: 'Handlee', cursive;
 
 .bg-theme {
     background-color: $bgTheme;
@@ -10,6 +11,9 @@ $white: #ffffff !important;
 }
 .border {
     border: solid $bgTheme;
+}
+.white-background {
+    background: $white;
 }
 .outline {
     border: solid $white;
@@ -21,10 +25,25 @@ $white: #ffffff !important;
 .outline:hover {
     border: solid $bgTheme;    
 }
-
 .bottom-radius {
     border-bottom-left-radius: 30px !important;
     border-bottom-right-radius: 30px !important;
+}
+.font {
+    font-family: $font;
+}
+.fine-font {
+    font-family: 'Raleway', sans-serif;
+}
+.size-22 {
+    font-size: 22px !important;
+}
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
