@@ -29,7 +29,7 @@
   border-bottom-right-radius: 30px !important;
 }
 .font {
-  font-family: "Handlee", cursive;
+  font-family: "Handlee", cursive !important;
 }
 .fine-font {
   font-family: "Raleway", sans-serif;
@@ -49,4 +49,10 @@ body {
 }
 .opacity {
   background: rgba(255, 255, 255, 0.5);
+}
+.new-outline:focus {
+  outline: solid #f14d4d !important;
+}
+.text-box {
+  width: 290px !important;
 }

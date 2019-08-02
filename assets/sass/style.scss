@@ -1,7 +1,8 @@
 // Vars
 $bgTheme: rgb(241, 77, 77) !important;
 $white: #ffffff !important;
-$font: 'Handlee', cursive;
+$font: 'Handlee', cursive !important;
+$finefont: 'Raleway', sans-serif;
 
 .bg-theme {
     background-color: $bgTheme;
@@ -37,7 +38,7 @@ $font: 'Handlee', cursive;
     font-family: $font;
 }
 .fine-font {
-    font-family: 'Raleway', sans-serif;
+    font-family: $finefont;
 }
 .size-22 {
     font-size: 22px !important;
@@ -54,6 +55,12 @@ body {
 }
 .opacity {
     background: rgba(255, 255, 255, 0.5);
+}
+.new-outline:focus {
+    outline: solid $bgTheme;
+}
+.text-box {
+    width: 290px !important;
 }
 
 
