@@ -1,5 +1,3 @@
-console.log("hello world!");
-
 function showNewNote(list) {
   // Add new note div
   $("newNoteDiv").empty();
@@ -9,9 +7,8 @@ function showNewNote(list) {
     let note = $('<p class="fine-font new-note border-left shadow-sm">');
     note.text(list[i]);
 
-    let closeNote = $('<button class="btn btn-primary white-background text-theme outline rounded-pill">');
+    let closeNote = $('<button class="btn btn-primary white-background text-theme outline rounded-pill delete">');
     closeNote.attr("new-note", i);
-    closeNote.addClass("delete");
     closeNote.text("X");
 
     note = note.prepend(closeNote);
@@ -20,25 +17,23 @@ function showNewNote(list) {
 }
 
 $("#addNote").on("click", function(event){
-    event.preventDefault();
 
     let newNote = $("#userTextInput").val().trim();
     list.push(newNote);
-
-    showNewNote(list);
 
     localStorage.setItem("note-added", JSON.stringify(list));
 
     $("#userTextInput").val("");
 });
 
+// When the delete button is clicked
 $(document).on("click", ".delete", function() {
 
     let noteNumber = $(this).attr("new-note");
 
     list.splice(noteNumber, 1);
 
-    showNewNote(list);
+    document.location.reload();
 
     localStorage.setItem("note-added", JSON.stringify(list));
 });
@@ -50,3 +45,4 @@ if (!Array.isArray(list)) {
 }
 
 showNewNote(list);
+
