@@ -6,7 +6,7 @@ function showNewNote(list) {
   
   for (let i = 0; i < list.length; i++) {
 
-    let note = $('<p class="fine-font new-note border-left shadow-sm">');
+    let note = $('<p class="wrap fine-font new-note border-left shadow-sm">');
     note.text(list[i]);
     let closeNote = $('<button class="btn btn-primary white-background text-theme outline rounded-pill delete">');
     closeNote.attr("new-note", i);

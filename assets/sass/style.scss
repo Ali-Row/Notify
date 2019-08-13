@@ -4,6 +4,13 @@ $white: #ffffff !important;
 $font: 'Handlee', cursive !important;
 $finefont: 'Raleway', sans-serif;
 
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .bg-theme {
     background-color: $bgTheme;
 }
@@ -43,13 +50,6 @@ $finefont: 'Raleway', sans-serif;
 .size-22 {
     font-size: 22px !important;
 }
-body {
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 .max-width {
     max-width: 1200px;
 }
@@ -69,6 +69,9 @@ body {
     margin: 0% auto;
     margin-bottom: 40px;
     font-size: 20px;
+}
+.wrap {
+    word-wrap: break-word;
 }
 .delete {
     margin-right: 7px;
