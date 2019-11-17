@@ -1,4 +1,4 @@
-$( document ).ready();
+$(document).ready();
 
 function showNewNote(list) {
   // Add new note div
@@ -19,9 +19,13 @@ function showNewNote(list) {
 $("#addNote").on("click", function(event){
 
     let newNote = $("#userTextInput").val().trim();
-    list.push(newNote);
-    localStorage.setItem("note-added", JSON.stringify(list));
-    $("#userTextInput").val("");
+      if (!newNote) {
+        alert("Please type something first!")
+      } else {
+        list.push(newNote);
+        localStorage.setItem("note-added", JSON.stringify(list));
+        $("#userTextInput").val("");
+      }
 });
 
 // When the delete button is clicked

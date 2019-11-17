@@ -6,19 +6,19 @@ body {
   background-attachment: fixed;
 }
 .bg-theme {
-  background-color: #f14d4d !important;
+  background-color: #c71111 !important;
 }
 .text-theme {
-  color: #f14d4d !important;
+  color: #c71111 !important;
 }
 .white-background {
   background: #fff !important;
 }
 .border {
-  border: solid 2px #f14d4d !important;
+  border: solid 2px #c71111 !important;
 }
 .border-left {
-  border-left: solid 5px #f14d4d !important;
+  border-left: solid 5px #c71111 !important;
 }
 .outline {
   border: solid 2px #fff !important;
@@ -29,7 +29,7 @@ body {
   transition-timing-function: linear;
 }
 .outline:hover {
-  border: solid 2px #f14d4d !important;
+  border: solid 2px #c71111 !important;
 }
 .bottom-radius {
   border-bottom-left-radius: 30px !important;
@@ -51,7 +51,7 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 .new-outline:focus {
-  outline: solid #f14d4d !important;
+  outline: solid #c71111 !important;
 }
 .text-box {
   width: 290px !important;
